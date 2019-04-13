@@ -1,5 +1,6 @@
 ﻿
-public enum Effects { MoveTo, Remove, Add, None }
+public enum Effects { Dismiss, Remove, Add, None }
+public enum Resources { Crew, Supplies }
 
 [System.Serializable]
 public class EventInfo {
@@ -10,13 +11,9 @@ public class EventInfo {
     [System.Serializable]
     public class ChoiceEffect {
         public string choiceName;
+        public string resultDescription;
         public Effects effect;
+        public Resources resource;
+        public int magnitude;
     }    
-}
-
-[System.Serializable]
-public class ResultInfo {
-    string resultName;
-    public string resultDescription;
-
 }
