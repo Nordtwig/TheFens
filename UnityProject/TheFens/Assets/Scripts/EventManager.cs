@@ -15,6 +15,8 @@ public class EventManager : MonoBehaviour {
     public Text resultName;
     public Text resultDescription;
 
+    public GameManager gameManager;
+
     Button[] choiceButtons;
 
     public EventInfo[] events;
@@ -23,16 +25,14 @@ public class EventManager : MonoBehaviour {
 
 
     void Start() {
-        TriggerNewEvent();
+        //TriggerNewEvent();
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.E)) {
-            TriggerNewEvent();
-        }
+        
     }
 
-    void TriggerNewEvent() {
+    public void TriggerNewEvent() {
         UpdateEvent(eventIndex);
         eventPanel.SetActive(true);
         resultPanel.SetActive(false);
@@ -128,5 +128,6 @@ public class EventManager : MonoBehaviour {
         Destroy(button.gameObject);
         
         resultPanel.SetActive(false);
+        gameManager.state = GameManager.GameState.Main;
     }
 }

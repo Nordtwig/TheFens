@@ -1473,6 +1473,85 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 299684939}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &310668954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 310668955}
+  - component: {fileID: 310668957}
+  - component: {fileID: 310668956}
+  m_Layer: 5
+  m_Name: HoveredObjectInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &310668955
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310668954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1604047163}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000012159, y: -0.0000030398}
+  m_SizeDelta: {x: 280.4, y: 61.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &310668956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310668954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &310668957
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310668954}
+  m_CullTransparentMesh: 0
 --- !u!1 &344844588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,6 +1612,7 @@ MonoBehaviour:
   eventDescription: {fileID: 1924933075}
   resultName: {fileID: 1460565099}
   resultDescription: {fileID: 2069350162}
+  gameManager: {fileID: 1614689861}
   events:
   - eventName: Welcome to The Fens!
     eventDescription: 'This is the Proof of Concept of the game, the Fens. Currently
@@ -1574,7 +1654,7 @@ MonoBehaviour:
       magnitude: 1
     - choiceName: Take no chances!
       resultDescription: Opting for caution, you throw the rotten supplies overboard.
-        Your crew is safe from disease, but the supplies are yet more strained.
+        Your crew is safe from disease, but the supplies grow yet more strained.
       effect: 1
       resource: 1
       magnitude: 2
@@ -3774,6 +3854,7 @@ RectTransform:
   - {fileID: 1182596641}
   - {fileID: 1070307759}
   - {fileID: 1469615318}
+  - {fileID: 1604047163}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8040,6 +8121,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1479152194}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1604047162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1604047163}
+  - component: {fileID: 1604047165}
+  - component: {fileID: 1604047164}
+  m_Layer: 5
+  m_Name: TooltipPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1604047163
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604047162}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 310668955}
+  m_Father: {fileID: 710364275}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 963, y: -510}
+  m_SizeDelta: {x: 317.90002, y: 87}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1604047164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604047162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.9529412, b: 0.84313726, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1604047165
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604047162}
+  m_CullTransparentMesh: 0
 --- !u!1 &1614689860
 GameObject:
   m_ObjectHideFlags: 0
@@ -8069,8 +8225,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6462433031f76484eaefd1a309bf3cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tick: 0
-  ticksRequired: 0
+  state: 0
+  ticksRequired: 10
+  ticksLeft: 0
+  tickSpeed: 1
+  tickIntervall: 400
+  crewCount: 10
+  supplyCount: 20
+  crewDisplay: {fileID: 1182596642}
+  suppliesDisplay: {fileID: 1070307760}
+  ticksDisplay: {fileID: 1469615319}
 --- !u!4 &1614689862
 Transform:
   m_ObjectHideFlags: 0
