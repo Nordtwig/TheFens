@@ -23,20 +23,11 @@ public class EventManager : MonoBehaviour {
 
     public int eventIndex;
 
-
-    void Start() {
-        //TriggerNewEvent();
-    }
-
-    void Update() {
-        
-    }
-
     public void TriggerNewEvent() {
         UpdateEvent(eventIndex);
         eventPanel.SetActive(true);
         resultPanel.SetActive(false);
-        eventIndex++;
+        eventIndex = Mathf.Abs(Random.Range(1, events.Length));
     }
 
     void UpdateEvent(int eventIndex) {
@@ -112,11 +103,14 @@ public class EventManager : MonoBehaviour {
         }
 
         if (effect != Effects.None) {
-            if (resource == Resources.Crew)
+            if (resource == Resources.Crew) {
                 this.resultDescription.text += " Crew";
+            }
             if (resource == Resources.Supplies)
                 this.resultDescription.text += " Supplies";
         }
+
+        gameManager.UpdateStats(effect, resource, magnitude);
 
         Button dismissButton = Instantiate(buttonPrefab, resultButton.transform);
         dismissButton.GetComponentInChildren<Text>().text = "Dismiss";
