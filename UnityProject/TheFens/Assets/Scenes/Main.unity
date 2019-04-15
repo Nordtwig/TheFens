@@ -1664,10 +1664,10 @@ RectTransform:
   m_Father: {fileID: 710364275}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1302, y: 732}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &344844590
 MonoBehaviour:
@@ -1720,18 +1720,17 @@ MonoBehaviour:
       resource: 1
       magnitude: 2
   - eventName: Rotten Supplies!
-    eventDescription: Some supplies have been exposed to a leak and have now rotten.
+    eventDescription: Some supplies have been exposed to a leak and have now rotteing.
       What do you do?
     choices:
-    - choiceName: A Bit of Rot never Hurt Nobody.
-      resultDescription: 'You opt to keep the rotten supplYou opt not to tell your
-        men. Later that evening, one of the rowers: pale and sweating, falls unconcious
-        into the muddy water below. Snappers pounce on the fellow, and you leave a
-        wake of blood as you row onwards.'
+    - choiceName: Ignore it.
+      resultDescription: 'You opt not to tell your men. Later that evening, one of
+        the rowers: pale and sweating, falls unconcious into the muddy water below.
+        Snappers pounce on the fellow, and you leave a wake of blood as you row onwards.'
       effect: 1
       resource: 0
       magnitude: 1
-    - choiceName: Take no chances!
+    - choiceName: Take no chances.
       resultDescription: Opting for caution, you throw the rotten supplies overboard.
         Your crew is safe from disease, but the supplies grow yet more strained.
       effect: 1
@@ -3629,8 +3628,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 412.25, y: -376.75}
-  m_SizeDelta: {x: 824.5, y: 150.7}
+  m_AnchoredPosition: {x: 455.25, y: -416.75}
+  m_SizeDelta: {x: 910.5, y: 166.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &643763573
 MonoBehaviour:
@@ -4290,8 +4289,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 412.25, y: -75.35}
-  m_SizeDelta: {x: 824.5, y: 150.7}
+  m_AnchoredPosition: {x: 455.25, y: -83.35}
+  m_SizeDelta: {x: 910.5, y: 166.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &796022294
 MonoBehaviour:
@@ -5841,10 +5840,10 @@ RectTransform:
   m_Father: {fileID: 344844589}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -391.5, y: -231.9}
+  m_SizeDelta: {x: 910.5, y: 500.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1106147175
 MonoBehaviour:
@@ -5942,8 +5941,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 412.25, y: -216.05}
-  m_SizeDelta: {x: 824.5, y: 230.05}
+  m_AnchoredPosition: {x: 455.25, y: -250.05}
+  m_SizeDelta: {x: 910.5, y: 181.36667}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1149607848
 MonoBehaviour:
@@ -7495,10 +7494,10 @@ RectTransform:
   m_Father: {fileID: 710364275}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -40, y: -30}
+  m_SizeDelta: {x: 1262, y: 702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1354251594
 MonoBehaviour:
@@ -7969,8 +7968,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 412.25, y: -50.5125}
-  m_SizeDelta: {x: 824.5, y: 101.025}
+  m_AnchoredPosition: {x: 455.25, y: -79.683334}
+  m_SizeDelta: {x: 910.5, y: 159.36667}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434499418
 MonoBehaviour:
@@ -8745,11 +8744,11 @@ RectTransform:
   m_Father: {fileID: 710364275}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20, y: -687}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 20, y: 15}
   m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &1469615319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9727,8 +9726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 412.25, y: -226.04999}
-  m_SizeDelta: {x: 824.5, y: 150.7}
+  m_AnchoredPosition: {x: 455.25, y: -250.04999}
+  m_SizeDelta: {x: 910.5, y: 166.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1803335936
 MonoBehaviour:
@@ -11177,8 +11176,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 412.25, y: -391.58752}
-  m_SizeDelta: {x: 824.5, y: 121.025}
+  m_AnchoredPosition: {x: 455.25, y: -420.4167}
+  m_SizeDelta: {x: 910.5, y: 159.36667}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2059291840
 MonoBehaviour:
@@ -11274,8 +11273,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 412.25, y: -61.5125}
-  m_SizeDelta: {x: 724.5, y: 123.025}
+  m_AnchoredPosition: {x: 455.25, y: -90.683334}
+  m_SizeDelta: {x: 810.5, y: 181.36667}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2069350162
 MonoBehaviour:
