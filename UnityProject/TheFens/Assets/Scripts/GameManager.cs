@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour {
     public int ticksLeft;
     public int tickSpeed;
     public int tickIntervall;
+    public float eatIntervall;
+
 
     public int crewCount;
     public int supplyCount;
@@ -25,6 +27,8 @@ public class GameManager : MonoBehaviour {
     public Text ticksDisplay;
 
     float timer;
+    float eatTimer;
+    float hungerModifier;
 
     EventManager eventManager;
     MapManager mapManager;
@@ -45,16 +49,25 @@ public class GameManager : MonoBehaviour {
             OnNewEvent();
         }
 
-        //StartCoroutine(Tick());
     }
 
     private void Update() {
 
-        if (state == GameState.Main && isMoving) {
-            timer++;
-            if (timer >= tickIntervall) {
-                UpdateTick();
-                timer = 0;
+        if (state == GameState.Main) {
+            eatTimer++;
+
+            if (eatTimer >= eatIntervall) {
+                Eat();
+                Debug.Log("Nom");
+                eatTimer = 0;
+            }
+
+            if (isMoving) {
+                timer++;
+                if (timer >= tickIntervall) {
+                    UpdateTick();
+                    timer = 0;
+                }
             }
         }
 
@@ -79,13 +92,6 @@ public class GameManager : MonoBehaviour {
             ReloadGame();
         }
     }
-    
-    //IEnumerator Tick() {
-    //    while (state == GameState.Main) {
-    //        UpdateTick();
-    //        yield return new WaitForSeconds(tickSpeed);
-    //    }
-    //}
 
     void OnNewEvent() {
         state = GameState.Event;
@@ -146,6 +152,8 @@ public class GameManager : MonoBehaviour {
             supplyCount = Mathf.Clamp(supplyCount, 0, 10);
             CheckStarvation();
         }
+
+        CalculateHungerModifier();
     }
 
     void UpdateUI() {
@@ -172,6 +180,23 @@ public class GameManager : MonoBehaviour {
         ticksRequired = 10;
         ticksLeft = ticksRequired;
         isMoving = true;
+        UpdateStats();
+    }
+
+    void CalculateHungerModifier() {
+        //if (!isMoving)
+        //    hungerModifier = 0.5f;
+        //else
+        //    hungerModifier = 1;
+
+        //hungerModifier = 1 * (crewCount / 10); // TODO: Add new modifier when Drummer speed is a thing
+        //eatIntervall *= hungerModifier;
+        //Debug.Log(crewCount);
+        //Debug.Log(eatIntervall);
+    }
+
+    void Eat() {
+        supplyCount--;
         UpdateStats();
     }
 
